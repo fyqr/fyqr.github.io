@@ -1,538 +1,493 @@
 <!DOCTYPE html>
-<html lang="en">
 
 
 
+  
 
+
+<html class="theme-next muse use-motion" lang="en,default">
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  
-      <title>VincenLiu</title>
-  
-
-  
-  
-  <meta name="description" content="">
-  <meta name="author" content="VincenLiu">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- load loadjs.js -->
-  <script src="/.js"></script>
-
-
-<link rel="stylesheet" href="/.css">
-  <!-- load lightgallery -->
-<link rel="stylesheet" href="/css/lightgallery.css">
-<link rel="stylesheet" href="/.css">
-<script
-src="https://code.jquery.com/jquery-3.3.1.min.js"
-integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-crossorigin="anonymous"></script>
-  
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
 
 
 
 
 
 
-    <link rel="stylesheet" href="/css/taurus.css">
-    
-        <link rel="stylesheet" href="/css/scheme-taurus/animations.css">
-    
 
 
- 
 
-  <!-- load font awesome 5 -->
-  <script defer src=""></script>
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
-  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-  });
-  </script>
-  <!-- load mathjax -->
-  <script type="text/javascript" async src=""></script>
 
-  <!-- load js-cookie -->
-  <script src=""></script>
-    <script src="/js/social-share.min.js"></script>
-    <script src="/js/theme.js"></script>
 
-  <!-- include cookie.js -->
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
-  <!-- include comment system code -->
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="VincenLiu">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="VincenLiu">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="VincenLiu">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title>VincenLiu</title>
   
-    <script src=""></script>
-<script src=''></script>
-  
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+
+
+
+
+
+
+
 </head>
-<body style="display: flex; flex-direction: column; min-height: 100vh;">
 
- 
-
-<header id="header" class='header'>
-	<div class="header-title">
-		
-		<div class='header-logo'>
-			<a href='/'>
-				<img src='/images/theme-icon.svg' />
-			</a>
-		</div>
-		<div class='header-text'>
-			<h1>
-				<a href="/">VincenLiu</a>
-			</h1>
-			<subtitle>
-				tiny
-			</subtitle>
-		</div>
-		
-	</div>
-	<div id='header-nav'>
-		
-
-
-
-<nav id="nav">
-	
-	
-		
-			
-		
-		
-			<div class='nav-item'>
-				
-					<div class="nav-name">
-				
-					<a class='nav-link' href="/resume/">
-						<span>Resume </span>
-					</a>
-				</div>
-			</div>
-		
-	
-		
-			
-		
-		
-			<div class='nav-item'>
-				
-					<div class="nav-name">
-				
-					<a class='nav-link' href="/aaa/">
-						<span>Menu item </span>
-					</a>
-				</div>
-			</div>
-		
-	
-		
-			
-		
-		
-			<div class='nav-item'>
-				
-					<div class="nav-name">
-				
-					<a class='nav-link' href="/bbb/">
-						<span>Notes </span>
-					</a>
-				</div>
-			</div>
-		
-	
-		
-			
-		
-		
-			<div class='nav-item'>
-				
-					<div class="nav-name">
-				
-					<a class='nav-link' href="/ccc/">
-						<span>Projects </span>
-					</a>
-				</div>
-			</div>
-		
-	
-	
-	<div class='nav-item' id='nav-item-archive'>
-		
-				<div class='nav-icon'>
-				
-			<a href="/archives/" title='Archives'>
-			<img src="/images/icons/blue-line/archive.svg" alt="">
-			</a>
-		</div>
-	</div>
-	<div class='nav-item' id='nav-item-search'>
-		
-		<div class='nav-icon'>
-		
-			<a href="/search/" title='Search'>
-			<img src="/images/icons/blue-line/search.svg" alt="">
-			</a>
-		</div>
-	</div>
-	<div class="nav-item" id='nav-item-more'>
-		<div class="nav-icon">
-				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
-				<img src="/images/icons/blue-line/menu.svg" alt="">
-				</a>
-		</div>
-		<div class="nav-more-menu">
-		
-			
-			
-		
-			<div class='nav-more-item'>
-					<div class="nav-name">
-						<a class='nav-link' href="/resume/">
-							<span>Resume</span>
-						</a>
-					</div>
-			</div>
-		
-		
-			
-			
-		
-			<div class='nav-more-item'>
-					<div class="nav-name">
-						<a class='nav-link' href="/aaa/">
-							<span>Menu item</span>
-						</a>
-					</div>
-			</div>
-		
-		
-			
-			
-		
-			<div class='nav-more-item'>
-					<div class="nav-name">
-						<a class='nav-link' href="/bbb/">
-							<span>Notes</span>
-						</a>
-					</div>
-			</div>
-		
-		
-			
-			
-		
-			<div class='nav-more-item'>
-					<div class="nav-name">
-						<a class='nav-link' href="/ccc/">
-							<span>Projects</span>
-						</a>
-					</div>
-			</div>
-		
-		
-		
-	</div>
-	</div>
-</nav>
-
-	</div>
-</header>
-
- 
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
+  
+    
+  
 
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
 
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">VincenLiu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">tiny</p>
+      
+  </div>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div style="flex: 1;">
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
       
 
+      
+    </ul>
+  
 
-<div class="index-container" id='/index.html' data-name='index' data-version=''>
-	<div class='index-intro'>
-		时间是自己的
-	</div>
-	
-		<div class="grid-2_md-1 grid-equalHeight index-cards">
-		
-			
+  
+</nav>
 
 
 
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/06/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="VincenLiu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="VincenLiu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/06/hello-world/" itemprop="url">Hello World</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-06T11:19:10+08:00">
+                Jun 6, 2018
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2>Quick Start</h2>
+<h3>Create a new post</h3>
+<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure></p>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3>Run server</h3>
+<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3>Generate static files</h3>
+<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3>Deploy to remote sites</h3>
+<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
 
 
+    
+  </section>
+
+  
 
 
+          </div>
+          
 
 
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">VincenLiu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
 
 
+        
+      </div>
+    </main>
 
-<div class='Card Card-hover Card-index-1' id='hashit_0f54da1d5649d015fc9d3a8e62827dd53b1de4114090ab409c9f38cb63791490' data-name='Hello World' data-version=''>
-	
-		
-		
-	
-	<mark class='Card-badge' style='{visibility: "hidden"}'></mark>
-	<div class='Card-figure'>
-		
-			<a href="/2018/06/06/hello-world/">
-		
-		
-			<img class='grow' src="/images/uncategorized.svg" alt="" onerror='if (this.src != "/images/uncategorized.svg") this.src = "/images/uncategorized.svg"'>
-		
-		</a>
-	</div>
-	<div class="Card-body">
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">VincenLiu</span>
 
-			<div class='Card-title'>
-				<h2>
-				
-					<a href="/2018/06/06/hello-world/">
-				
-				Hello World</a></h2>
-			</div>
-			<div class='Card-excerpt'>
-				<p>
-				
-					<a href="/2018/06/06/hello-world/">
-				
-				
-				
-				Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer...
-				</a></p>
-				
-			</div>
-
-			
-			
-			<div class="Card-meta">
-				
-				<div class='Card-tags'></div>
-				
-				<ul>
-						<li>
-							<a href="/archives/">
-								<i class='fa fa-calendar'></i> Jun 6, 2018
-							</a>
-						</li>
-						
-						
-						
-				</ul>
-			</div>
-		</a>
-	</div>
+  
 </div>
-		
-		</div>
-	
-	<br>
-	
-	<div class='pagination'>
-	
-	
-	
-		<div class="pagination-item">
-			
-			
-				<span>1</span>
-			
-		</div>
-	
 
-	
-</div>
-</div>
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
   </div>
 
   
 
-<footer id='footer'>
-    <div class='footer-copyright'>
-        <div>
-            <p> Copyright by <a href="">VincenLiu </a> @ 2018</p>
-            <p>Designed by: <i class="fas fa-paint-brush"></i> <a href="https://moober.cn">Moober</a> e <i class="fas fa-graduation-cap"></i> <a href="https://qutang.github.io">Qu Tang</a> &bull; Tema: <a href="http://yoursite.com">Cutie -Taurus</a> &bull; Powered by <a href="http://hexo.io">Hexo.</a></p>
-        </div>
-    </div>
-    
-    <div class='footer-social'>
-        
-            
-                
-                    <div class='footer-social-item'><a href='https://github.com/fyqr' target='_blank' ><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></div>
-                
-            
-                
-                    <div class='footer-social-item'><a href='Youtube' target='_blank' ><i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a></div>
-                
-            
-                
-                    <div class='footer-social-item'><a href='Linkedin' target='_blank' ><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a></div>
-                
-            
-                
-                    <div class='footer-social-item'><a href='Weibo' target='_blank' ><i class="fab fa-weibo fa-2x" aria-hidden="true"></i></a></div>
-                
-            
-        
-    </div>
-</footer>
-
-  <br>
-
-  <div id="footer-nav" class='footer-nav'>
-		
-
-
-
-<nav id="nav">
-	
-	
-		
-			
-				
-			
-		
-		
-	
-		
-			
-		
-		
-	
-		
-			
-		
-		
-	
-		
-			
-		
-		
-	
-	
-	<div class='nav-item' id='nav-item-archive'>
-		
-				<div class='nav-icon'>
-				
-			<a href="/archives/" title='Archives'>
-			<img src="/images/icons/blue-line/archive.svg" alt="">
-			</a>
-		</div>
-	</div>
-	<div class='nav-item' id='nav-item-search'>
-		
-		<div class='nav-icon'>
-		
-			<a href="/search/" title='Search'>
-			<img src="/images/icons/blue-line/search.svg" alt="">
-			</a>
-		</div>
-	</div>
-	<div class="nav-item" id='nav-item-more'>
-		<div class="nav-icon">
-				<a href='#' onclick='onClickMenuIcon(event);' ontouchstart='onClickMenuIcon(event);'>
-				<img src="/images/icons/blue-line/menu.svg" alt="">
-				</a>
-		</div>
-		<div class="nav-more-menu">
-		
-			
-			
-		
-			<div class='nav-more-item'>
-					<div class="nav-name">
-						<a class='nav-link' href="/resume/">
-							<span>Resume</span>
-						</a>
-					</div>
-			</div>
-		
-		
-			
-			
-		
-			<div class='nav-more-item'>
-					<div class="nav-name">
-						<a class='nav-link' href="/aaa/">
-							<span>Menu item</span>
-						</a>
-					</div>
-			</div>
-		
-		
-			
-			
-		
-			<div class='nav-more-item'>
-					<div class="nav-name">
-						<a class='nav-link' href="/bbb/">
-							<span>Notes</span>
-						</a>
-					</div>
-			</div>
-		
-		
-			
-			
-		
-			<div class='nav-more-item'>
-					<div class="nav-name">
-						<a class='nav-link' href="/ccc/">
-							<span>Projects</span>
-						</a>
-					</div>
-			</div>
-		
-		
-		
-	</div>
-	</div>
-</nav>
-
-	</div>
-
-  
-
-
-
-    
-
-
-
-
-
-
-
-    <script src="/js/lightgallery.min.js"></script>
-<script src="/js/lg-zoom.min.js"></script>
-<script type='text/javascript'>
-    $(document).ready(function() {
-        $("#lightgallery").lightGallery(); 
-        $(".article-content img").each(function(){
-            console.log($(this).attr('src'))
-            $(this).attr('data-src', $(this).attr('src')).lightGallery({
-                selector: 'this'
-            })
-        });
-    });
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
 </script>
 
 
@@ -540,61 +495,127 @@ crossorigin="anonymous"></script>
 
 
 
-<script type='text/javascript'>
+
+
 
   
-    loadjs(['', '', '/js/post.v2.js'], 'post-version');
-    loadjs.ready('post-version', {
-      success: function(){
-        console.log('ready to run badge script')
-        
-          
-          
-          
-            var postBadge = document.querySelector('#hashit_0f54da1d5649d015fc9d3a8e62827dd53b1de4114090ab409c9f38cb63791490 mark.Card-badge');
-            $(postBadge).fadeOut();
-            
-          
-        
-      }
-    })
+
+
+
+
+
+
+
+
+
+
+
+
   
-</script>
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
 
 
 
-<!-- <script src="/js/post.js"></script> -->
+  
+  
 
-<script src="/js/headroom.min.js"></script>
+  
 
-<script data-no-instant type='text/javascript'>
+  
 
-initHeadroom();
 
-changeLayoutOnTouchScreen();
-
-// 
-// var post = new Post('', '');
-// console.log(post);
-// $('.Card').each(function(){
-//     var post_url = $(this).attr('id');
-//     var true_url = $(this).find('.Card-title a').first().attr('href');
-//     var card = this;
-//     post.getCommentCount(post_url, function(count){
-//         $(card).find('.card-comment-count').first().text(count);
-//     });
-//     post.getVisitCount(post_url, function(count){
-//         $(card).find('.card-visit-count').first().text(count);
-//     });
-    
-// });
-
-// 
-</script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
 
 
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>
