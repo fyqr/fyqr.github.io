@@ -1,1191 +1,760 @@
 <!DOCTYPE html>
+<html lang="en">
 
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang="zh-Hans,default">
+<!-- Head tag -->
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="VincenLiu">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="VincenLiu">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="VincenLiu">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-
-  <link rel="canonical" href="http://yoursite.com/"/>
-
-
-
-
-
-  <title>VincenLiu</title>
-  
-
-
-
-
-
-
-
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/hexo-theme-huxblog/img/favicon.ico">
+
+    <title>
+        
+          刘琦琦的博客 | Liuqiqi&#39;s Blog
+        
+    </title>
+
+    <link rel="canonical" href="http://kaijun.rocks/hexo-theme-huxblog/hexo-theme-huxblog/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/hexo-theme-huxblog/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/hexo-theme-huxblog/css/hux-blog.min.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/hexo-theme-huxblog/css/highlight.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  
-  
-    
-  
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
 
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/hexo-theme-huxblog/">刘琦琦律师</a>
+        </div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/hexo-theme-huxblog/">Home</a>
+                    </li>
 
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">VincenLiu</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/hexo-theme-huxblog/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/hexo-theme-huxblog/archives/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/hexo-theme-huxblog/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
-      
-        <p class="site-subtitle">tiny</p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-schedule">
-          <a href="/schedule/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
-            
-            日程表
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-sitemap">
-          <a href="/sitemap.xml" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
-            
-            站点地图
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-commonweal">
-          <a href="/404/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
-            
-            公益404
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
+    <!-- /.container -->
 </nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/hexo-theme-huxblog/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>刘琦琦律师</h1>
+                    <!--<hr class="small">-->
+                    <span class="subheading"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
 
 
- </div>
-    </header>
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        
 
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
+<!-- USE SIDEBAR -->
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                post-container
+            ">
             
-  <section id="posts" class="posts-expand">
+                <!-- Main Content -->
+
+
+<div class="post-preview">
+
+    <a href="/hexo-theme-huxblog/2018/12/06/装修学习/">
+        <h2 class="post-title">
+            装修学习
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            施工保护
+
+张贴告示
+
+告示中的内容应包括：
+
+开工日期
+施工单位及联系人电话
+
+
+
+
+电梯保护
+公共地面保护
+
+第一层PU防潮布（防水、防渗）对毛坯作用不大，后期可能有用
+第二层 白板（防撞、缓冲）
+第三层 夹板 （加强）
+
+
+大门保护，这里肯定要特别注意，拿房应该是已经装好门了
+
+卫生间装修
+
+卫生间若有位置移动或做垫高时应注意垫高用的材料，不能用废料；以防后期出现渗水等情况。
+浴室瓷砖......
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 刘琦琦 on
+        2018-12-06
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/hexo-theme-huxblog/2018/08/23/结构工程师考试疑问记录（一）/">
+        <h2 class="post-title">
+            注册结构工程师考试疑问记录（一）
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            在砌体局部受压计算中f取值到底要不要乘γa？
+
+前中国建筑设计研究院副总工程师如是说。
+...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 刘琦琦 on
+        2018-08-23
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/hexo-theme-huxblog/2018/08/08/树莓派初探/">
+        <h2 class="post-title">
+            树莓派初探
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            树莓派的初始登录
+
+登录名：pi
+登录密码：raspberry
+
+树莓派基本操作
+
+进入root模式
+
+
+Ctrl+Alt+F6
+Ctrl+Alt+F1
+
+
+sudo raspi-config 设置raspberry，类似于Windows开机时的Tab或者F12
+
+VNC的安装
+
+
+安装VNC应使用命令行，在安装软件包之前，应确保apt缓存是最新的，通过键入命令：sudo apt-get u......
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 刘琦琦 on
+        2018-08-08
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/hexo-theme-huxblog/2018/06/06/hexo theme/">
+        <h2 class="post-title">
+            HEXO 主题臻选
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            
+ztopic
+ylion
+twentyfifteen-wordpress
+tomotoes
+simpleblock
+simple-japanese
+simple-black
+pure  ★
+olive  ★★
+mellow
+mdui ★★
+light ★★
+indigo ★
+icalm ★
+hollow ★有特色，比较年轻
+cutie ★★ 不错，稍微有点儿复杂
+bubuzou
+anoth......
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 刘琦琦 on
+        2018-06-06
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/hexo-theme-huxblog/2015/07/09/js-module-7day/">
+        <h2 class="post-title">
+            Example Post using Keynote Layout
+        </h2>
+        <h3 class="post-subtitle">
+            Keynote: JavaScript Modularization Journey
+        </h3>
+        <div class="post-content-preview">
+            
+下滑这里查看更多内容
+
+7月9日，我在公司内部进行了名为「JavaScript 模块化七日谈」分享，并将该 Slides 分享到了微博上。出乎意料地，这篇微博先后被 @JS小组 @尤小右 @寸志 等近 200 人转发，阅读达到 10w，获得了还不错的评价。
+于是，我决定将它重新发到我的博客上，并为它专门制作了适用于 Keynote 展示文稿的新布局。它能自动根据屏幕大小/旋转以一定比例填充......
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Hux on
+        2015-07-09
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/hexo-theme-huxblog/2015/04/14/unix-linux-note/">
+        <h2 class="post-title">
+            Example Post With Default Header Image
+        </h2>
+        <h3 class="post-subtitle">
+            不适合人类阅读，非常水的自我笔记
+        </h3>
+        <div class="post-content-preview">
+            
+This document is not completed and will be updated anytime.
+
+Catagory
+
+Unix
+
+Bell Labs
+Xenix
+BSD
+FreeBSD &amp; Apple
+NeXTStep
+Darwin
+POSIX
+
+
+Unix-like
+
+Single Unix Specification
+Apple iOS
+XNU Kern......
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Hux on
+        2015-04-14
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/hexo-theme-huxblog/2014/09/22/js-version/">
+        <h2 class="post-title">
+            Example Post
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            JavaScript 有着很奇怪的命名史。
+1995 年，它作为网景浏览器（Netscape Navigator）的一部分首次发布，网景给这个新语言命名为 LiveScript。一年后，为了搭上当时媒体热炒 Java 的顺风车，临时改名为了 JavaScript （当然，Java 和 JavaScript 的关系，就和雷锋和雷锋塔一样 —— 并没有什么关系）
+
+&lt;small class......
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Hux on
+        2014-09-22
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/hexo-theme-huxblog/2014/01/29/hello-2015/">
+        <h2 class="post-title">
+            Welcome to Hux Blog
+        </h2>
+        <h3 class="post-subtitle">
+             "Hello World, Hello Blog"
+        </h3>
+        <div class="post-content-preview">
+            
+“Yeah It's on. ”
+
+前言
+Hux 的 Blog 就这么开通了。
+跳过废话，直接看技术实现 
+2015 年，Hux 总算有个地方可以好好写点东西了。
+作为一个程序员， Blog 这种轮子要是挂在大众博客程序上就太没意思了。一是觉得大部分 Blog 服务都太丑，二是觉得不能随便定制不好玩。之前因为太懒没有折腾，结果就一直连个写 Blog 的地儿都没有。
+在玩了一段时间知乎之后，......
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Hux on
+        2014-01-29
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/hexo-theme-huxblog/2013/05/25/js-module-loader/">
+        <h2 class="post-title">
+            Example Post with Code Highlight
+        </h2>
+        <h3 class="post-subtitle">
+            CommonJS，RequireJS，SeaJS 归纳笔记
+        </h3>
+        <div class="post-content-preview">
+            Foreword
+
+Here comes Module!
+
+随着网站逐渐变成「互联网应用程序」，嵌入网页的 JavaScript 代码越来越庞大，越来越复杂。网页越来越像桌面程序，需要一个团队分工协作、进度管理、单元测试……我们不得不使用软件工程的方法，来管理网页的业务逻辑。
+于是，JavaScript 的模块化成为迫切需求。在 ES6 Module 来临之前，JavaScript 社区提供......
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Hux on
+        2013-05-25
+    </p>
+
+</div>
+<hr>
+
+
+
+<!-- Pager -->
+
+<ul class="pager">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/06/装修学习/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="VincenLiu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="VincenLiu">
-    </span>
-
     
-      <header class="post-header">
+</ul>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+
+
+                <!-- 如果开启评论功能 -->
                 
-                <a class="post-title-link" href="/2018/12/06/装修学习/" itemprop="url">装修学习</a></h1>
-        
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-06T18:58:25+08:00">
-                Dec 6, 2018
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1>施工保护</h1>
-<ul>
-<li>张贴告示
-<ul>
-<li>告示中的内容应包括：
-<ul>
-<li>开工日期</li>
-<li>施工单位及联系人电话</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>电梯保护</li>
-<li>公共地面保护
-<ul>
-<li>第一层PU防潮布（防水、防渗）对毛坯作用不大，后期可能有用</li>
-<li>第二层 白板（防撞、缓冲）</li>
-<li>第三层 夹板 （加强）</li>
-</ul>
-</li>
-<li>大门保护，这里肯定要特别注意，拿房应该是已经装好门了</li>
-</ul>
-<h1>卫生间装修</h1>
-<ul>
-<li>卫生间若有位置移动或做垫高时应注意垫高用的材料，不能用废料；以防后期出现渗水等情况。</li>
-<li>浴室瓷砖美丑于打底也有一定的关系，打底要有一定的平整性。</li>
-</ul>
-<h1>阳台装修</h1>
-<ul>
-<li>阳台也需要做防水</li>
-<li>如果需要考虑覆土的问题，应该如何处理。</li>
-</ul>
-<h1>装修材料等</h1>
-<ul>
-<li>
-<p><a href="https://www.ikea.cn/cn/zh/catalog/categories/departments/kitchen/23614/" target="_blank" rel="noopener">封板</a></p>
-</li>
-<li></li>
-</ul>
-<h1>家具品牌</h1>
-<ul>
-<li><a href="http://www.nitorichina.com/" target="_blank" rel="noopener">nitori</a></li>
-<li></li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/23/结构工程师考试疑问记录（一）/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="VincenLiu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="VincenLiu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+            </div>
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+                <!-- Featured Tags -->
                 
-                <a class="post-title-link" href="/2018/08/23/结构工程师考试疑问记录（一）/" itemprop="url">注册结构工程师考试疑问记录（一）</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-23T09:25:28+08:00">
-                Aug 23, 2018
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>在砌体局部受压计算中<strong>f取值到底要不要乘γa？</strong></p>
-<p><img src="http://ww1.sinaimg.cn/large/6025c154gy1fujiwh3qzsj20hs0vkjt2.jpg" alt=""></p>
-<p>前中国建筑设计研究院副总工程师如是说。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/08/树莓派初探/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="VincenLiu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="VincenLiu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/hexo-theme-huxblog/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                            
+                        
+                            
+                            <a href="/hexo-theme-huxblog/tags/#前端开发" title="前端开发" rel="3">前端开发</a>
+                            
+                        
+                            
+                            <a href="/hexo-theme-huxblog/tags/#JavaScript" title="JavaScript" rel="3">JavaScript</a>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    </div>
+                </section>
                 
-                <a class="post-title-link" href="/2018/08/08/树莓派初探/" itemprop="url">树莓派初探</a></h1>
-        
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-08T17:40:38+08:00">
-                Aug 8, 2018
-              </time>
-            
+                <!-- Short About -->
+                <section class="visible-md visible-lg">
+                    <hr><h5><a href="/hexo-theme-huxblog/about/">ABOUT ME</a></h5>
+                    <div class="short-about">
 
-            
+                        
+                            <img src="/hexo-theme-huxblog//img/avatar.jpg" />
+                        
 
-            
-          </span>
+                        
+                            <p>心中有爱，手中有剑</p>
+                        
 
-          
+                        <!-- SNS Link -->
+                        <ul class="list-inline">
+                            
+                            
+                            
+                                <li>
+                                    <a target="_blank" href="https://www.zhihu.com/people/liu-lawyer-12">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa  fa-stack-1x fa-inverse">知</i>
+                                        </span>
+                                    </a>
+                                </li>
+                            
 
-          
-            
-          
+                            
 
-          
-          
+                            
 
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3>树莓派的初始登录</h3>
-<ul>
-<li>登录名：pi</li>
-<li>登录密码：raspberry</li>
-</ul>
-<h3>树莓派基本操作</h3>
-<ol>
-<li>进入root模式</li>
-</ol>
-<ul>
-<li><code>Ctrl+Alt+F6</code></li>
-<li><code>Ctrl+Alt+F1</code></li>
-</ul>
-<ol>
-<li><code>sudo raspi-config</code> 设置raspberry，类似于Windows开机时的<code>Tab</code>或者<code>F12</code></li>
-</ol>
-<h4>VNC的安装</h4>
-<ol>
-<li>
-<p>安装VNC应使用命令行，在安装软件包之前，应确保apt缓存是最新的，通过键入命令：<code>sudo apt-get upadte</code></p>
-</li>
-<li>
-<p>键入<code>sudo apt-get install tightvncserver</code>完成安装。</p>
-</li>
-<li>
-<p>完成安装后，需要设置VNC的密码，在命令行输入：<code>vncpassword</code>然后输入密码。</p>
-</li>
-<li>
-<p>另外当询问是否设置一个只能查看桌面（view-only）密码时，可以不用设置。
-<img src="http://ww1.sinaimg.cn/large/6025c154gy1fu3gwag8uij20ib0boab3.jpg" alt=""></p>
-</li>
-<li>
-<p>设置开启启动，输入命令<code>sudo nano /etc/init.d/tightvncserver</code>
-在文件中粘贴如下内容
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh</span><br><span class="line">### BEGIN INIT INFO</span><br><span class="line"># Provides:          tightvncserver</span><br><span class="line"># Required-Start:    $local_fs</span><br><span class="line"># Required-Stop:     $local_fs</span><br><span class="line"># Default-Start:     <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span></span><br><span class="line"># Default-Stop:      <span class="number">0</span> <span class="number">1</span> <span class="number">6</span></span><br><span class="line"># Short-Description: Start/stop tightvncserver</span><br><span class="line">### END INIT INFO</span><br><span class="line"># More details see:</span><br><span class="line"><span class="meta"># http:<span class="comment">//www.penguintutor.com/linux/tightvnc</span></span></span><br><span class="line">### Customize <span class="keyword">this</span> entry</span><br><span class="line"># Set the USER variable to the name of the user to start tightvncserver under</span><br><span class="line">export USER='pi'</span><br><span class="line">### End customization required</span><br><span class="line">eval cd ~$USER</span><br><span class="line"><span class="keyword">case</span> <span class="string">"$1"</span> in</span><br><span class="line">  start)</span><br><span class="line">    # 启动命令行。此处自定义分辨率、控制台号码或其它参数。</span><br><span class="line">    su $USER -c '/usr/bin/tightvncserver -depth 16 -geometry 800x600 :1'</span><br><span class="line">    echo <span class="string">"Starting TightVNC server for $USER "</span></span><br><span class="line">    ;;</span><br><span class="line">  stop)</span><br><span class="line">    # 终止命令行。此处控制台号码与启动一致。</span><br><span class="line">    su $USER -c '/usr/bin/tightvncserver -kill :1'</span><br><span class="line">    echo <span class="string">"Tightvncserver stopped"</span></span><br><span class="line">    ;;</span><br><span class="line">  *)</span><br><span class="line">    echo <span class="string">"Usage: /etc/init.d/tightvncserver &#123;start|stop&#125;"</span></span><br><span class="line">    <span class="built_in">exit</span> <span class="number">1</span></span><br><span class="line">    ;;</span><br><span class="line">esac</span><br><span class="line"><span class="built_in">exit</span> <span class="number">0</span></span><br></pre></td></tr></table></figure></p>
-</li>
-<li>
-<p>完成后，在控制台输入<code>vncserver</code>启动vnc服务，此时系统会为vnc服务分配一个数字（port），在通过其他设备连接时需要。
-<img src="http://ww1.sinaimg.cn/large/6025c154gy1fu3gwagdr4j20ht0bhq37.jpg" alt=""></p>
-</li>
-<li>
-<p>完成如下操作后，可以在电脑上安装VNC Viewer(官网下载)，点击File -&gt; New connection，弹出Properties，在VNC Server中输入树莓派对应IP地址以及服务号，Name中可以输入树莓派名字也可以不进行输入，点击OK。点击File -&gt; New connection，弹出Properties，在VNC Server中输入树莓派对应IP地址以及服务号，Name中可以输入树莓派名字也可以不进行输入，点击OK。
-<img src="http://ww1.sinaimg.cn/large/6025c154gy1fu3gwafoqgj20cy0hk74i.jpg" alt=""></p>
-</li>
-<li>
-<p>双击图标连接，点击continue，输入在树莓派上设置好的vnc密码，完成登陆。
-<img src="http://ww1.sinaimg.cn/large/6025c154gy1fu3gwafx4ij20dh09u0sq.jpg" alt=""></p>
-</li>
-<li>
-<p>另外手机或者pad操作同样可行（方法同电脑端基本一致）</p>
-</li>
-</ol>
-<h4>因装vnc有问题，重启登入不了桌面系统</h4>
-<ol>
-<li><strong>解决办法</strong>：改为无密码登录</li>
-</ol>
-<ul>
-<li>进入root，见<strong>树莓派基本操作</strong></li>
-<li>按下列步骤完成</li>
-</ul>
-<pre><code class="language-c">cd /               #回到根目录
-rm -r /tmp         #删除tmp文件夹
-mkdir /tmp          #新建文件夹
-rm /home/用户名/.Xauthority #新建文件</code></pre>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/06/hexo theme/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="VincenLiu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="VincenLiu">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+                            
+                            
+                            
+                            
+                        </ul>
+                    </div>
+                </section>
                 
-                <a class="post-title-link" href="/2018/06/06/hexo theme/" itemprop="url">HEXO 主题臻选</a></h1>
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="http://blog.kaijun.rocks" target="_blank">Kaijun&#39;s Blog</a></li>
+                    
+                        <li><a href="http://huangxuan.me" target="_blank">Hux Blog</a></li>
+                    
+                        <li><a href="#" target="_blank">Foo</a></li>
+                    
+                        <li><a href="#" target="_blank">Bar</a></li>
+                    
+                        <li><a href="#" target="_blank">Example Friends</a></li>
+                    
+                        <li><a href="#" target="_blank">It helps SEO</a></li>
+                    
+                </ul>
+                
+            </div>
         
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-06T11:19:10+08:00">
-                Jun 6, 2018
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ul>
-<li><a href="https://github.com/wa-ri/hexo-theme-ztopic" target="_blank" rel="noopener">ztopic</a></li>
-<li><a href="https://github.com/GeekaholicLin/hexo-theme-ylion" target="_blank" rel="noopener">ylion</a></li>
-<li><a href="https://github.com/Troy-Yang/hexo-theme-twentyfifteen-wordpress" target="_blank" rel="noopener">twentyfifteen-wordpress</a></li>
-<li><a href="https://github.com/tomotoes/hexo-theme-tomotoes" target="_blank" rel="noopener">tomotoes</a></li>
-<li><a href="https://github.com/jysperm/hexo-theme-simpleblock" target="_blank" rel="noopener">simpleblock</a></li>
-<li><a href="https://github.com/mitsuruog/hexo-theme-simple-japanese" target="_blank" rel="noopener">simple-japanese</a></li>
-<li><a href="https://github.com/yunfeihe/simple-black" target="_blank" rel="noopener">simple-black</a></li>
-<li><a href="https://github.com/cofess/hexo-theme-pure" target="_blank" rel="noopener">pure</a>  ★</li>
-<li><a href="https://github.com/zhangolve/hexo-theme-olive" target="_blank" rel="noopener">olive</a>  ★★</li>
-<li><a href="https://github.com/codefine/hexo-theme-mellow" target="_blank" rel="noopener">mellow</a></li>
-<li><a href="https://github.com/Halyul/hexo-theme-mdui" target="_blank" rel="noopener">mdui</a> ★★</li>
-<li><a href="https://github.com/hexojs/hexo-theme-light" target="_blank" rel="noopener">light</a> ★★</li>
-<li><a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank" rel="noopener">indigo</a> ★</li>
-<li><a href="https://github.com/nameoverflow/hexo-theme-icalm" target="_blank" rel="noopener">icalm</a> ★</li>
-<li><a href="https://github.com/zchen9/hexo-theme-hollow" target="_blank" rel="noopener">hollow</a> ★有特色，比较年轻</li>
-<li><a href="https://github.com/qutang/hexo-theme-cutie" target="_blank" rel="noopener">cutie</a> ★★ 不错，稍微有点儿复杂</li>
-<li><a href="https://github.com/bulandent/hexo-theme-bubuzou" target="_blank" rel="noopener">bubuzou</a></li>
-<li><a href="https://github.com/TongchengQiu/hexo-theme-another" target="_blank" rel="noopener">another</a> 简单</li>
-<li><a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" rel="noopener">Yelee</a> 普通</li>
-<li><a href="https://github.com/KevinOfNeu/hexo-theme-xoxo" target="_blank" rel="noopener">XOXO</a> 简单</li>
-<li><a href="https://github.com/SumiMakito/hexo-theme-typography" target="_blank" rel="noopener">Typography</a></li>
-<li><a href="https://github.com/geekplux/hexo-theme-typing" target="_blank" rel="noopener">Typing</a></li>
-<li><a href="https://github.com/LouisBarranqueiro/tranquilpeak-hexo-theme" target="_blank" rel="noopener">Tranquilpeak</a></li>
-<li><a href="https://github.com/WinMin/Sw-blog" target="_blank" rel="noopener">Sw-blog</a></li>
-<li><a href="https://gumroad.com/l/hexo-theme-standrews" target="_blank" rel="noopener">St. Andrews</a> 偏设计</li>
-<li><a href="https://github.com/Mrminfive/hexo-theme-skapp" target="_blank" rel="noopener">Skapp</a></li>
-<li><a href="https://github.com/chuguixin/Simple" target="_blank" rel="noopener">Simple</a></li>
-<li><a href="https://github.com/NoahDragon/hexo-theme-react" target="_blank" rel="noopener">React</a></li>
-<li><a href="https://github.com/stiekel/hexo-theme-random" target="_blank" rel="noopener">Random</a></li>
-<li><a href="https://github.com/cheng-kang/hexo-theme-qna" target="_blank" rel="noopener">QnA</a></li>
-<li><a href="https://github.com/klugjo/hexo-theme-phantom" target="_blank" rel="noopener">Phantom</a></li>
-<li><a href="https://github.com/sun11/hexo-theme-paperbox" target="_blank" rel="noopener">Paperbox</a></li>
-<li><a href="https://github.com/lazzzis/hexo-theme-only" target="_blank" rel="noopener">Only</a></li>
-<li><a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank" rel="noopener">Nayo</a></li>
-<li><a href="https://github.com/ppoffice/hexo-theme-minos" target="_blank" rel="noopener">Minos</a></li>
-<li><a href="https://gum.co/hexo-theme-milan" target="_blank" rel="noopener">Milan</a> 卖东西</li>
-<li><a href="https://github.com/Molunerfinn/hexo-theme-melody" target="_blank" rel="noopener">Melody</a></li>
-<li><a href="https://github.com/tufu9441/maupassant-hexo" target="_blank" rel="noopener">Maupassant</a></li>
-<li><a href="https://github.com/klugjo/hexo-theme-magnetic" target="_blank" rel="noopener">Magnetic</a></li>
-<li><a href="https://github.com/BosenY/Lap" target="_blank" rel="noopener">Lap</a></li>
-<li><a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank" rel="noopener">JSimple</a> 简书</li>
-<li><a href="https://github.com/ahonn/hexo-theme-even" target="_blank" rel="noopener">Even</a></li>
-<li><a href="https://github.com/sharvaridesai/hexo-theme-edinburgh" target="_blank" rel="noopener">Edinburgh</a></li>
-<li><a href="https://github.com/ptsteadman/hexo-theme-corporate" target="_blank" rel="noopener">Corporate</a> 公司首页</li>
-<li><a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank" rel="noopener">CleanBlog</a></li>
-<li><a href="https://github.com/sergodeeva/cactus-white" target="_blank" rel="noopener">Cactus White</a></li>
-<li><a href="https://github.com/probberechts/hexo-theme-cactus" target="_blank" rel="noopener">Cactus</a></li>
-<li><a href="https://github.com/chaooo/hexo-theme-BlueLake" target="_blank" rel="noopener">BlueLake</a></li>
-<li><a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank" rel="noopener">Apollo</a></li>
-<li><a href="https://github.com/haojen/hexo-theme-Anisina" target="_blank" rel="noopener">Anisina</a></li>
-<li><a href="https://github.com/Ben02/hexo-theme-Anatole" target="_blank" rel="noopener">Anatole</a></li>
-<li><a href="https://github.com/AlynxZhou/hexo-theme-aria" target="_blank" rel="noopener">ARIA</a></li>
-<li><a href="https://github.com/huyingjie/hexo-theme-A-RSnippet" target="_blank" rel="noopener">A-RSnippet</a></li>
-<li><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">NexT.Mist </a> 简单</li>
-</ul>
-
-          
-        
-      
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">VincenLiu</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-
-            
-
-          </nav>
-
-          
-
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">VincenLiu</span>
-
-  
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/liu-lawyer-12">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 刘琦琦律师 2020 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    Ported by <a href="http://blog.kaijun.rocks">Kaijun</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=kaijun&repo=hexo-theme-huxblog&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/hexo-theme-huxblog/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/hexo-theme-huxblog/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/hexo-theme-huxblog/js/hux-blog.min.js"></script>
 
 
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
 
-  <span class="post-meta-divider">|</span>
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
 
 
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://kaijun.rocks/hexo-theme-huxblog/hexo-theme-huxblog/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
 
 
+<!-- Google Analytics -->
 
 
-        
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-49627206-1';
+    var _gaDomain = 'huangxuan.me';
 
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
 </script>
 
 
 
 
+<!-- Baidu Tongji -->
 
+<script>
+    // dynamic User by Hux
+    var _baId = '4cc1f2d8f3067386cc5cdb626a202900';
 
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
 
 
+<!-- Side Catalog -->
 
-  
 
 
 
 
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
+<!-- Image to hack wechat -->
+<img src="http://kaijun.rocks/hexo-theme-huxblog/hexo-theme-huxblog/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
 
 </body>
+
 </html>
